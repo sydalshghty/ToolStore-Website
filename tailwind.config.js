@@ -10,6 +10,7 @@ export default {
         blackColor: "#151515",
         whiteColor: "#fff",
         yellowColor: "#ffc10a",
+        grayColor: "#777777"
       }
     },
   },

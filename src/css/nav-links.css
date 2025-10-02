@@ -78,6 +78,6 @@ ul li a:hover::after{
         height: 40px;
     }
     .icon-search{
-        font-size: 10px;
+        font-size: 18px;
     }
 }
