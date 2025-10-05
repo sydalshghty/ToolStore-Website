@@ -1,8 +1,10 @@
 import Navbar from "../sections/Navbar";
+import SliderContent from "../components/slider-content";
 function Home() {
-    return(
+    return (
         <>
-            <Navbar/>
+            <Navbar />
+            <SliderContent />
         </>
     )
 }
