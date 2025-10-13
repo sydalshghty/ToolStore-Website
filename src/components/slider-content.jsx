@@ -2,36 +2,53 @@ import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa6";
 import sliderbg1 from "../assets/slider1-bg.png";
 import sliderbg2 from "../assets/sliderbg-2.png";
+//import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, EffectFade,Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "../css/slider-content.css";
 
 function SliderContent() {
+    const slides = [
+        {id: 1, img: sliderbg1, title: "up to 40% discounts", suptitle: "best hand tools collection"},
+        {id: 2, img: sliderbg2, title: "sanitary ware & building material tools", suptitle: "high quality tools"}
+    ]
+
     return (
         <div className="slidercontent-departament">
-            <div className="content-slider">
-                <div className="slider1">
-                    <img src={sliderbg1} alt="bg-slider1" className="bg-slider1" />
-                    <div className="content-information">
-                        <p>up to 40% discounts</p>
-                        <h1>best hand tools collection</h1>
-                        <button>shop now</button>
-                    </div>
+            <Swiper
+                modules={[Navigation, EffectFade,Autoplay]} 
+                navigation={{
+                    nextEl: ".custom-next",
+                    prevEl: ".custom-prev",
+                }}
+                loop={true}
+                effect="fade"                       
+                speed={700}                         
+                slidesPerView={1}
+                autoplay={{
+                    delay: 3000 
+                }}
+            >
+                <div className="content-slider relative w-full h-full">
+                        {slides.map((slide,index) => {
+                            return(
+                            <SwiperSlide key={slide.id}>
+                                <div className="slider-information relative w-full h-full" key={slide.id}>
+                                    <img src={slide.img} alt="bg-slider1" className="bg-slider1 w-full h-full" />
+                                    <div className="content-information absolute top-1/3 left-2/3 w-full h-full">
+                                        <p className="text-2xl mb-5 title">{slide.title}</p>
+                                        <h1 className="text-5xl font-bold capitalize mb-5 suptitle">{slide.suptitle}</h1>
+                                        <button className="w-36 h-10 bg-yellowColor text-sm cursor-pointer absolute z-50">shop now</button>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            )
+                        })}
                 </div>
-                <div className="slider2">
-                    <img src={sliderbg2} alt="bg-slider2" className="bg-slider2" />
-                    <div className="content-information">
-                        <p>sanitary ware & building material tools</p>
-                        <h1>high quality tools</h1>
-                        <button>shop now</button>
-                    </div>
-                </div>
-            </div>
-            <div className="btns-transfer">
-                <div className="col-icon">
-                    <FaChevronLeft />
-                </div>
-                <div className="col-icon">
-                    <FaChevronRight />
-                </div>
-            </div>
+            </Swiper>
         </div>
     )
 }

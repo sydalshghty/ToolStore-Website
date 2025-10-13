@@ -16,7 +16,7 @@ function NavbarMobile({ onClose }) {
 
     return (
         <div
-            className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 content-navbar"
+            className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 content-navbar z-50"
             onClick={handleClose}
         >
             <div
