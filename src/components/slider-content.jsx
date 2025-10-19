@@ -38,9 +38,9 @@ function SliderContent() {
                             <SwiperSlide key={slide.id}>
                                 <div className="slider-information relative w-full h-full" key={slide.id}>
                                     <img src={slide.img} alt="bg-slider1" className="bg-slider1 w-full h-full" />
-                                    <div className="content-information absolute top-1/3 left-2/3 w-full h-full">
-                                        <p className="text-2xl mb-5 title">{slide.title}</p>
-                                        <h1 className="text-5xl font-bold capitalize mb-5 suptitle">{slide.suptitle}</h1>
+                                    <div className="content-information absolute  w-full h-full">
+                                        <p className="text-2xl mb-5 title" style={{width: "420px"}}>{slide.title}</p>
+                                        <h1 className="text-5xl font-bold capitalize mb-5 suptitle" style={{width: "400px"}}>{slide.suptitle}</h1>
                                         <button className="w-36 h-10 bg-yellowColor text-sm cursor-pointer absolute z-50">shop now</button>
                                     </div>
                                 </div>

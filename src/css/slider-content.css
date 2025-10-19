@@ -1,12 +1,13 @@
 .content-information{
-    
+    left: 60%;
+    top: 25%;
 }
 .content-information .title{
-
+    min-width: fit-content;
 }
 .content-information .suptitle{
-    max-width: 380px;
     line-height: 1.1;
+    min-width: fit-content;
 }
 @media (max-width: 1400px){
     .content-information{
@@ -36,24 +37,41 @@
     }
 }
 @media (max-width: 768px){
-    .content-information{
-        left: 0;
-        top: 0;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 40px;
-    }
     .content-information .title,
     .content-information .suptitle{
-        display: none;
+        width: 300px !important;
+    }
+    .content-information .title{
+        font-size: 15px;
+    }
+    .content-information .suptitle{
+        font-size: 18px;
+    }
+    .content-information button{
+        width: 120px;
+        height: 35px;
     }
 }
 @media (max-width: 600px){
+    .content-information{
+        left: 40%;
+        top: 15%;
+    }
     .content-information button{
         width: 100px;
-        height: 35px;
-        font-size: 12px;
-        font-weight: 600;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 520px){
+    .content-information{
+        top: 25%;
+        left: 40%;
+    }
+    .content-information .suptitle{
+        font-size: 15px;
+    }
+    .content-information .title{
+        display: none;
     }
 }
