@@ -12,7 +12,7 @@ function Categories(){
     ]
 
     return(
-        <div className="banners-departament w-full h-full mt-10 mb-10">
+        <div className="banners-departament w-full h-full mt-16 mb-16">
             <div className="container w-full h-full flex gap-5 justify-between">
                 {BannersInformation.map((banner,index) => {
                     return(

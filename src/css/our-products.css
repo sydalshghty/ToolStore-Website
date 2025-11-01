@@ -1,0 +1,35 @@
+.our-products-departament .container{
+    width: 100%;
+    height: 100%;
+}
+.link-products{
+    position: relative;  
+}
+.link-products::before,
+.link-products::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 0%;
+    height: 5%;
+    background-color: black;
+    transition: width 0.5s ease;
+}
+.link-products::before{
+    left: 50%;
+}
+.link-products::after{
+    right: 50%;
+}
+.link-products:hover::before,
+.link-products:hover::after{
+    width: 50%;
+}
+@media (max-width: 600px){
+    .h1-our-products{
+        font-size: 25px;
+    }
+    .our-products-links{
+        gap: 20px;
+    }
+}
