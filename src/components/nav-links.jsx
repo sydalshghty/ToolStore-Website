@@ -3,12 +3,12 @@ import { IoSearch } from "react-icons/io5";
 import "../css/nav-links.css";
 
 function NavLinks() {
-    return(
-        <div className="nav-links w-full h-16 bg-yellowColor">
-            <div className="container w-full h-full flex justify-between items-center">
+    return (
+        <div className="w-full h-16 nav-links bg-yellowColor">
+            <div className="container flex items-center justify-between w-full h-full">
                 <ul className="flex gap-10 all-links">
                     <li>
-                        <a href="#Home">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="#Pliers">Pliers</a>
@@ -29,18 +29,18 @@ function NavLinks() {
                         <a href="#Blog">Blog</a>
                     </li>
                 </ul>
-                <div className="col-customer flex items-center gap-3">
-                    <FiPhone className="text-3xl"/>
+                <div className="flex items-center gap-3 col-customer">
+                    <FiPhone className="text-3xl" />
                     <div className="col-support">
                         <p>Customer Support:</p>
                         <p>1-234-5678901</p>
                     </div>
                 </div>
-                <div className="content-search w-full flex justify-center items-center">
-                    <div className="flex justify-center items-center w-3/4 h-11 bg-white col-content-search">
-                        <input type="text" placeholder="Search..." className="w-4/5"/>
-                        <div className="col-icon-search w-14 h-full bg-black text-white flex justify-center items-center text-2xl cursor-pointer">
-                            <IoSearch className="icon-search"/>
+                <div className="flex items-center justify-center w-full content-search">
+                    <div className="flex items-center justify-center w-3/4 bg-white h-11 col-content-search">
+                        <input type="text" placeholder="Search..." className="w-4/5" />
+                        <div className="flex items-center justify-center h-full text-2xl text-white bg-black cursor-pointer col-icon-search w-14">
+                            <IoSearch className="icon-search" />
                         </div>
                     </div>
                 </div>

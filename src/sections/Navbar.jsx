@@ -2,11 +2,11 @@ import FreeDelivery from "../components/free-delivery";
 import NavSearch from "../components/nav-search";
 import NavLinks from "../components/nav-links";
 function Navbar() {
-    return(
+    return (
         <>
-            <FreeDelivery/>
-            <NavSearch/>
-            <NavLinks/>
+            <FreeDelivery />
+            <NavSearch />
+            <NavLinks />
         </>
     )
 }
