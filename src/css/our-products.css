@@ -25,9 +25,10 @@
 .link-products:hover::after{
     width: 50%;
 }
+
 @media (max-width: 600px){
     .h1-our-products{
-        font-size: 25px;
+        font-size: 28px;
     }
     .our-products-links{
         gap: 20px;

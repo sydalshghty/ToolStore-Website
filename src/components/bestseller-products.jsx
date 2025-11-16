@@ -59,7 +59,7 @@ function BestsellerProducts() {
                             slidesPerView: 3,
                         },
                         1440: {
-                            slidesPerView: 4,
+                            slidesPerView: 3,
                         },
                     }}
                 >
