@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "../css/slider-content.css";
+import { Link } from "react-scroll";
 
 function SliderContent() {
     const slides = [
@@ -41,7 +42,13 @@ function SliderContent() {
                                     <div className="content-information absolute  w-full h-full">
                                         <p className="text-2xl mb-5 title" style={{width: "420px"}}>{slide.title}</p>
                                         <h1 className="text-5xl font-bold capitalize mb-5 suptitle" style={{width: "400px"}}>{slide.suptitle}</h1>
-                                        <button className="w-36 h-10 bg-yellowColor text-sm cursor-pointer absolute z-50">shop now</button>
+                                        <Link 
+                                            to="our-products"
+                                            smooth={true}
+                                            duration={700}
+                                        >
+                                            <button className="w-36 h-10 bg-yellowColor text-sm cursor-pointer absolute z-50">shop now</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </SwiperSlide>

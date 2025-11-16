@@ -2,7 +2,7 @@ import bannerImg1 from "../assets/banner1-removebg-preview.png";
 import bannerImg2 from "../assets/banner2-removebg-preview.png";
 import bannerImg3 from "../assets/banner3-removebg-preview.png";
 import "../css/categories.css";
-
+import { Link } from "react-scroll";
 function Categories(){
 
     const BannersInformation = [
@@ -22,7 +22,13 @@ function Categories(){
                                 <h3 className="text-2xl font-medium mb-3 text-black">{banner.title}</h3>
                                 <p className="text-lg font-medium text-black">{banner.suptitle}</p>
                             </div>
+                            <Link 
+                                to="our-products"
+                                smooth={true}
+                                duration={700}
+                            >
                             <button className="bg-yellowColor h-10 shop-banner-btn">shop now</button>
+                            </Link>
                         </div>
                         <div>
                             <img src={banner.img} alt="banner-img" className="w-fit h-fit"/>

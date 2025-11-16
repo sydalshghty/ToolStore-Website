@@ -36,7 +36,7 @@ function FeaturedProducts() {
     }, []);
 
     return (
-        <div className="w-full h-full featured-products pl-24 pr-24">
+        <div className="w-full h-full featured-products pl-24 pr-24" id="our-products">
             <div className="flex gap-5 all-products  w-full h-full justify-center items-center">
                 <Swiper
                     modules={[EffectFade, Autoplay]}
