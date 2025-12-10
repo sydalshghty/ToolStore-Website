@@ -1,10 +1,8 @@
-import Home from "./pages/Home"
-import { Routes, Route } from "react-router-dom";
-
+import HomePage from "./pages/Home-Page";
 function App() {
   return (
     <>
-      <Home />
+      <HomePage />
     </>
   )
 }

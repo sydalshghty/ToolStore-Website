@@ -7,12 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        blackColor: "#151515",
-        whiteColor: "#fff",
-        yellowColor: "#ffc10a",
-        grayColor: "#777777",
-        bgbrands: "#f6f6f6",
-        backgroundColor: "#f7f7f7",
+        grayColor: "#191C1F",
+        whiteColor: "#FFFFFF",
+        yellowColor: "#EBC80C",
+        secondaryColor: "#1B6392",
+        gray500: "#77878F",
+        gray900: "#191C1F",
+        secondary700: "#1B6392"
       }
     },
   },
