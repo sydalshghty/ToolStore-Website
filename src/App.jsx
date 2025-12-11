@@ -1,8 +1,16 @@
-import HomePage from "./pages/Home-Page";
+//import HomePage from "./pages/Home-Page";
+//import TopHeader from "./components/header/top-header";
+import TopHeader from "./components/header/top-header";
+import CenterHeader from "./components/header/center-header";
+import BottomHeader from "./components/header/bottom-header";
 function App() {
   return (
     <>
-      <HomePage />
+      <header>
+        <TopHeader />
+        <CenterHeader />
+        <BottomHeader />
+      </header>
     </>
   )
 }

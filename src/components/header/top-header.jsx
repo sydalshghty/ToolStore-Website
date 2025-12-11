@@ -1,6 +1,6 @@
-import balckImg from "../assets/Black.svg";
-import discountImg from "../assets/Discount.svg";
-import arrowRight from "../assets/ArrowRight.svg";
+import balckImg from "../../assets/Black.svg";
+import discountImg from "../../assets/Discount.svg";
+import arrowRight from "../../assets/ArrowRight.svg";
 function TopHeader() {
     return (
         <div className="w-full h-20 black-friday-content bg-grayColor">

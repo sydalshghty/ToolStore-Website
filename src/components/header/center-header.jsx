@@ -1,10 +1,10 @@
-import twitterIcon from "../assets/twitter.svg";
-import facebookIcon from "../assets/Facebook.svg";
-import pinterestIcon from "../assets/Pinterest.svg";
-import redditIcon from "../assets/Reddit.svg";
-import youtubeIcon from "../assets/Youtube.svg";
-import instagramIcon from "../assets/Instagram.svg";
-import arrowDownIcon from "../assets/arrowdown.svg";
+import twitterIcon from "../../assets/twitter.svg";
+import facebookIcon from "../../assets/Facebook.svg";
+import pinterestIcon from "../../assets/Pinterest.svg";
+import redditIcon from "../../assets/Reddit.svg";
+import youtubeIcon from "../../assets/Youtube.svg";
+import instagramIcon from "../../assets/Instagram.svg";
+import arrowDownIcon from "../../assets/arrowdown.svg";
 function CenterHeader() {
     const socialIcons = [
         { id: 1, icon: twitterIcon },

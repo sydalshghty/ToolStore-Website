@@ -2,14 +2,14 @@ import { FiShoppingCart } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
 import { AiOutlineUser } from "react-icons/ai";
 import { IoSearchSharp } from "react-icons/io5";
-//import iconunited from "../assets/Icon.svg";
-import unitedDealsLogo from "../assets/united-deals-logo.svg";
+import iconunited from "../../assets/Icon.svg";
+import unitedDealsLogo from "../../assets/united-deals-logo.svg";
 function BottomHeader() {
     return (
         <nav className="nav-content w-full h-[88px] bg-secondaryColor">
             <div className="container min-w-[100%] h-full flex justify-between items-center">
                 <div className="flex gap-2 col-logo">
-                    {/*  <img src={iconunited} alt="icon-img" /> */}
+                    <img src={iconunited} alt="icon-img" />
                     <img src={unitedDealsLogo} alt="logo-img" />
                 </div>
                 <div className="flex items-center col-search w-[40%] h-12 bg-whiteColor pl-5 pr-5 pt-[14px] pb-[14px]">
