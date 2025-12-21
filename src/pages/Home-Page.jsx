@@ -1,8 +1,10 @@
-import Navbar from "../sections/Navbar";
+import Header from "../components/header/Header";
+import Banner from "../components/banners.jsx/banner";
 function HomePage() {
     return (
         <>
-            <Navbar />
+            <Header />
+            <Banner />
         </>
     )
 }

@@ -1,9 +1,10 @@
 import balckImg from "../../assets/Black.svg";
 import discountImg from "../../assets/Discount.svg";
 import arrowRight from "../../assets/ArrowRight.svg";
+import "../header/all-header.css";
 function TopHeader() {
     return (
-        <div className="w-full h-20 black-friday-content bg-grayColor">
+        <div className="w-full h-20 top-header bg-grayColor">
             <div className="container flex items-center justify-between w-full h-full min-w-[100%]">
                 <div className="flex items-center gap-3 col-friday">
                     <img src={balckImg} alt="black-friday" />

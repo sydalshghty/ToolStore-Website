@@ -5,6 +5,7 @@ import redditIcon from "../../assets/Reddit.svg";
 import youtubeIcon from "../../assets/Youtube.svg";
 import instagramIcon from "../../assets/Instagram.svg";
 import arrowDownIcon from "../../assets/arrowdown.svg";
+import "../header/all-header.css";
 function CenterHeader() {
     const socialIcons = [
         { id: 1, icon: twitterIcon },
@@ -16,7 +17,7 @@ function CenterHeader() {
     ]
 
     return (
-        <div className="social-content w-full h-[52px] bg-secondaryColor [borde] border-b-[1px] border-whiteColor">
+        <div className="center-header w-full h-[52px] bg-secondaryColor">
             <div className="container min-w-[100%] h-full flex justify-between items-center">
                 <p className="text-sm text-whiteColor">Welcome to Clicon online eCommerce store.</p>
                 <div className="flex gap-6 all-follow-us-content">
