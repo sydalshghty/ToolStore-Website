@@ -4,7 +4,7 @@ function HomePage() {
     return (
         <>
             <Header />
-            <Banner />
+            {/* <Banner />*/}
         </>
     )
 }

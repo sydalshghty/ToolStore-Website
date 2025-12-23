@@ -3,7 +3,7 @@ import bannerImg2 from "../../assets/banner-img-2.png";
 import bannerImg3 from "../../assets/banner-img-3.png";
 function Banner() {
     return (
-        <div className="w-full h-full mt-6 mb-6 banners-departament">
+        <div className="w-full h-full mt-6 mb-6  banners-departament">
             <div className="container flex min-w-full gap-6">
                 <div className="slider-banners w-[872px] h-[520px]">
                     <img src={bannerImg1} alt="banner-img" className="object-contain w-full h-full cursor-pointer" />

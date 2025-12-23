@@ -4,8 +4,12 @@ import { AiOutlineUser } from "react-icons/ai";
 import iconunited from "../../assets/Icon.svg";
 import unitedDealsLogo from "../../assets/united-deals-logo.svg";
 import { FiSearch } from "react-icons/fi";
+import { FaXmark } from "react-icons/fa6";
+import { useState } from "react";
 import "../header/all-header.css";
 function BottomHeader() {
+    const [showSearch, setShowSearch] = useState(false);
+
     return (
         <nav className="nav-content w-full h-[88px] bg-secondaryColor">
             <div className="container min-w-[100%] h-full flex justify-between items-center">
@@ -13,7 +17,7 @@ function BottomHeader() {
                     <img src={iconunited} alt="icon-img" />
                     <img src={unitedDealsLogo} alt="logo-img" />
                 </div>
-                <form action="" className="flex items-center col-search w-[40%] h-12 bg-whiteColor pl-5 pr-5 pt-[14px] pb-[14px]">
+                <form action="" className="flex items-center form-search w-[40%] h-12 bg-whiteColor pl-5 pr-5 pt-[14px] pb-[14px]">
                     <input type="text" name="search" placeholder="Search for anything..." className="w-[95%] min-h-[100%] border-none outline-none text-sm text-gray500" />
                     <button type="submit">
                         <FiSearch className="w-5 h-5 cursor-pointer text-gray900" />
@@ -21,20 +25,42 @@ function BottomHeader() {
                 </form>
                 <div className="flex items-center gap-6 all-icons">
                     <div className="flex cursor-pointer col-cart">
-                        <FiShoppingCart className="w-8 h-8 text-whiteColor" />
+                        <FiShoppingCart className="w-8 h-8 text-whiteColor cart-icon" />
                         <div className="number-products w-5 h-5 pt-[2px] pb-[2px] bg-whiteColor rounded-full flex justify-center items-center mt-[-4px] ml-[-8px]">
                             <p className="text-xs font-semibold text-secondary700">2</p>
                         </div>
                     </div>
                     <div className="flex cursor-pointer col-heart ">
-                        <FaRegHeart className="w-8 h-8 text-whiteColor" />
-                        <div className="number-hearts w-5 h-5 pt-[2px] pb-[2px] bg-whiteColor rounded-full flex justify-center items-center mt-[-4px] ml-[-8px]">
+                        <FaRegHeart className="w-8 h-8 text-whiteColor heart-icon" />
+                        <div className="number-heart w-5 h-5 pt-[2px] pb-[2px] bg-whiteColor rounded-full flex justify-center items-center mt-[-4px] ml-[-8px]">
                             <p className="text-xs font-semibold text-secondary700">2</p>
                         </div>
                     </div>
-                    <AiOutlineUser className="w-8 h-8 cursor-pointer text-whiteColor" />
+                    <AiOutlineUser className="w-8 h-8 cursor-pointer text-whiteColor account-icon" />
+                    {showSearch ?
+                        <FaXmark className="w-6 h-6 text-white cursor-pointer icon-search-mobile"
+                            onClick={() => {
+                                setShowSearch(!showSearch)
+                            }}
+                        />
+                        :
+                        <FiSearch className="w-6 h-6 text-white cursor-pointer icon-search-mobile"
+                            onClick={() =>
+                                setShowSearch(!showSearch)
+                            }
+                        />}
                 </div>
             </div>
+            {showSearch ?
+                <form action="" className="relative z-10 flex items-center justify-center w-full h-12 pl-10 pr-10 bg-colorf6f6f6 form-search-mobile">
+                    <input type="text" name="search" placeholder="Search..." className="w-full h-10 border-none outline-none bg-colorf6f6f6" />
+                    <button type="submit">
+                        <FiSearch className="w-5 h-5 cursor-pointer text-gray900" />
+                    </button>
+                </form>
+                :
+                ""
+            }
         </nav>
     )
 }

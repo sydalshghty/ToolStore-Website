@@ -19,7 +19,7 @@ function CenterHeader() {
     return (
         <div className="center-header w-full h-[52px] bg-secondaryColor">
             <div className="container min-w-[100%] h-full flex justify-between items-center">
-                <p className="text-sm text-whiteColor">Welcome to Clicon online eCommerce store.</p>
+                <p className="text-sm text-whiteColor welcome-p">Welcome to Clicon online eCommerce store.</p>
                 <div className="flex gap-6 all-follow-us-content">
                     <div className="flex items-center gap-3 pr-5 border-r-[1px] follow-us-content border-whiteColor">
                         <p className="text-sm text-whiteColor">Follow us:</p>
