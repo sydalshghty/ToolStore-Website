@@ -1,0 +1,71 @@
+.best-Products-departament{
+    
+}
+.best-Products-departament .container{
+
+}
+.best-Products-departament .container .all-best-products{
+    width: 100%;
+    height: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.best-Products-departament .container .all-best-products .col-only-product{
+    width: 328px;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #E4E7E9;
+}
+.best-Products-departament .container .all-best-products .all-products{
+
+}
+.best-Products-departament .container .all-best-products .all-products .col-product{
+    width: 248px;
+    height: 100%;
+    border-right: 1px solid #E4E7E9;
+    border-bottom: 1px solid #E4E7E9;
+    border-top: 1px solid #E4E7E9;
+    position: relative;
+    cursor: pointer;
+}
+.best-Products-departament .container .all-best-products .all-products .col-product .h-c-v-icons{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 100%;
+    height: 188px;
+    background-color: rgba(130, 131, 131, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.best-Products-departament .container .all-best-products .all-products .col-product:hover .h-c-v-icons{
+    opacity: 1;
+}
+.best-Products-departament .container .all-best-products .all-products .col-product .h-c-v-icons div{
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.best-Products-departament .container .all-best-products .all-products .col-product .h-c-v-icons div svg{
+    width: 20px;
+    height: 20px;
+    color: #191C1F;
+    transition: color 0.5s ease;
+}
+.best-Products-departament .container .all-best-products .all-products .col-product .h-c-v-icons div:hover{
+    background-color: #FA8232;
+}
+.best-Products-departament .container .all-best-products .all-products .col-product .h-c-v-icons div:hover svg{
+    color: white;
+}
