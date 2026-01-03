@@ -16,15 +16,16 @@
     padding: 10px;
     border: 1px solid #E4E7E9;
 }
-.best-Products-departament .container .all-best-products .all-products{
-
+@media (max-width: 1200px){
+    .best-Products-departament .container .all-best-products .all-products{
+        justify-content: center;
+        min-width: 100%;
+    }
 }
 .best-Products-departament .container .all-best-products .all-products .col-product{
     width: 248px;
     height: 100%;
-    border-right: 1px solid #E4E7E9;
-    border-bottom: 1px solid #E4E7E9;
-    border-top: 1px solid #E4E7E9;
+    border: 1px solid #E4E7E9;
     position: relative;
     cursor: pointer;
 }
