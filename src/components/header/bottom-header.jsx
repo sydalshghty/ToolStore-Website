@@ -37,30 +37,8 @@ function BottomHeader() {
                         </div>
                     </div>
                     <AiOutlineUser className="w-8 h-8 cursor-pointer text-whiteColor account-icon" />
-                    {showSearch ?
-                        <FaXmark className="w-6 h-6 text-white cursor-pointer icon-search-mobile"
-                            onClick={() => {
-                                setShowSearch(!showSearch)
-                            }}
-                        />
-                        :
-                        <FiSearch className="w-6 h-6 text-white cursor-pointer icon-search-mobile"
-                            onClick={() =>
-                                setShowSearch(!showSearch)
-                            }
-                        />}
                 </div>
             </div>
-            {showSearch ?
-                <form action="" className="relative z-10 flex items-center justify-center w-full h-12 pl-10 pr-10 bg-colorf6f6f6 form-search-mobile">
-                    <input type="text" name="search" placeholder="Search..." className="w-full h-10 border-none outline-none bg-colorf6f6f6" />
-                    <button type="submit">
-                        <FiSearch className="w-5 h-5 cursor-pointer text-gray900" />
-                    </button>
-                </form>
-                :
-                ""
-            }
         </nav>
     )
 }

@@ -5,7 +5,7 @@ import "./banner.css";
 function Banner() {
     return (
         <div className="w-full h-full mt-6 mb-6 banners-departament">
-            <div className="container flex min-w-[100%] h-full gap-6 justify-between">
+            <div className="container flex min-w-[100%] h-full gap-6 justify-center">
                 <div className="slider-banners">
                     <img src={bannerImg1} alt="banner-img" className="object-contain min-w-[100%] h-full cursor-pointer" />
                 </div>

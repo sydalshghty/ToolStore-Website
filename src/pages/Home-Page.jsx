@@ -8,7 +8,6 @@ function HomePage() {
             <Header />
             <Banner />
             <Freedelivery />
-            <ShopWithCategories />
         </>
     )
 }
