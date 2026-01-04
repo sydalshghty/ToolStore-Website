@@ -4,26 +4,8 @@ import { PiHeart } from "react-icons/pi";
 import { HiOutlineEye } from "react-icons/hi2";
 import { FiShoppingCart } from "react-icons/fi";
 import productImgSmall from "../../assets/Image-product.png";
-import { useState, useEffect } from "react";
 
 function BestProducts() {
-    console.log("BestProducts Rendered");
-    //get all products
-    const [allProducts, setAllProducts] = useState([]);
-    const getAllProducts = async () => {
-        const res = await fetch('https://dummyjson.com/products');
-        const data = await res.json();
-        setAllProducts(data.products);
-        console.log(data)
-    };
-
-    useEffect(() => {
-        getAllProducts();
-    }, []);
-
-
-
-
     return (
         <div className="best-Products-departament mt-[40px] mb-[40px]">
             <div className="container min-w-[100%] h-full">
