@@ -1,0 +1,61 @@
+.featured-products .container .featured-products-content ul li{
+    position: relative;
+}
+.featured-products .container .featured-products-content ul li::before,
+.featured-products .container .featured-products-content ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FA8232;
+    transition: width 0.5s ease;
+}
+.featured-products .container .featured-products-content ul li::before{
+    left: 50%;
+}
+.featured-products .container .featured-products-content ul li::after{
+    right: 50%;
+}
+.featured-products .container .featured-products-content ul li.active::before,
+.featured-products .container .featured-products-content ul li.active::after{
+    width: 50%;
+}
+.featured-products .container .featured-products-content .col-product{
+    border: 1px solid #E4E7E9;
+}
+.featured-products .container .featured-products-content .col-product .h-c-v-icons{
+    background-color: rgba(191, 196, 196, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.featured-products .container .featured-products-content .col-product:hover .h-c-v-icons{
+    opacity: 1;
+}
+.featured-products .container .featured-products-content .col-product:hover .h-c-v-icons div{
+    transition: background-color 0.5s ease;
+}
+.featured-products .container .featured-products-content .col-product:hover .h-c-v-icons div svg{
+    transition: color 0.5s ease;
+}
+.featured-products .container .featured-products-content .col-product:hover .h-c-v-icons div:hover{
+    background-color: #FA8232;
+}
+.featured-products .container .featured-products-content .col-product:hover .h-c-v-icons div:hover svg{
+    color: white;
+}
+@media (max-width: 1050px){
+    .featured-products .container .featured-products-content .heading-col h1{
+        display: none;
+    }
+}
+@media (max-width: 992px){
+    .featured-products .container .featured-products-content .all-featured-products{
+        justify-content: center;
+    }
+}
+@media (max-width: 768px){
+    .featured-products  .category-links{
+        flex-wrap: wrap;
+    }
+}
