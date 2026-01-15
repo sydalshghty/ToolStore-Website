@@ -31,7 +31,7 @@ function FeaturedProducts() {
 
     /*End Get All Product Data With Api Function*/
     return (
-        <section className="w-full h-full featured-products mb-[200px]">
+        <section className="w-full h-full featured-products">
             <div className="container flex min-w-[100%] h-full gap-6">
                 <div className="w-full featured-products-content">
                     <div className="flex items-center justify-between w-full heading-col">

@@ -1,0 +1,10 @@
+@media (max-width: 768px){
+    .new-apple-banner .container{
+        flex-direction: column;
+        justify-content: center !important; 
+    }
+    .new-apple-banner .container .col-img-banner{
+        width: 100%;
+        height: 100%;
+    }
+}
