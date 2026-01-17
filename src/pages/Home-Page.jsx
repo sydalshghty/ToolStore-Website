@@ -4,6 +4,7 @@ import Freedelivery from "../components/freedelivery/freedelivery";
 import ShopWithCategories from "../components/shop-Categories/shop-categories";
 import FeaturedProducts from "../components/featured-products/featured-products";
 import NewAppleBanner from "../components/new-apple-banner/new-apple";
+import ComputerAccessories from "../components/computer-accessories/computer-accessories";
 function HomePage() {
     return (
         <>
@@ -13,6 +14,7 @@ function HomePage() {
             <ShopWithCategories />
             <FeaturedProducts />
             <NewAppleBanner />
+            <ComputerAccessories />
         </>
     )
 }
