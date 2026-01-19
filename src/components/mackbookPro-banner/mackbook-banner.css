@@ -1,0 +1,10 @@
+@media (max-width: 1400px){
+    .mackbook-banner{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 768px){
+    .mackbook-banner{
+        display: none;
+    }
+}

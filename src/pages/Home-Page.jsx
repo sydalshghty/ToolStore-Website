@@ -5,6 +5,8 @@ import ShopWithCategories from "../components/shop-Categories/shop-categories";
 import FeaturedProducts from "../components/featured-products/featured-products";
 import NewAppleBanner from "../components/new-apple-banner/new-apple";
 import ComputerAccessories from "../components/computer-accessories/computer-accessories";
+import MackbookBanner from "../components/mackbookPro-banner/mackbook-banner";
+import FlashProducts from "../components/flash-products/flash-Products";
 function HomePage() {
     return (
         <>
@@ -15,6 +17,8 @@ function HomePage() {
             <FeaturedProducts />
             <NewAppleBanner />
             <ComputerAccessories />
+            <MackbookBanner />
+            <FlashProducts />
         </>
     )
 }
