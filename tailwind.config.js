@@ -23,7 +23,8 @@ export default {
         warning400: "#EFD33D",
         danger500: "#EE5858",
         primary100: "#FFE7D6",
-        primary500: "#FA8232"
+        primary500: "#FA8232",
+        gray50: "#F2F4F5"
       }
     },
   },
